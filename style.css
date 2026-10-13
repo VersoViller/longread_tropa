@@ -482,6 +482,29 @@ footer {
    }
 }
 
+/* 1000px */
+@media (max-width: 1000px) {
+   .cols2 {
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .cols4 {
+      grid-template-columns: repeat(2, 1fr);
+   }
+   main {
+      section#vaiting {
+         img {
+            height: 280px;
+         }
+      }
+      section#program {
+         .grid {
+            display: flex;
+            flex-direction: column;
+         }
+      }
+   }
+}
+
 @font-face {
    font-family: "onest";
    src: url(fonts/onest/Onest-Bold.ttf) format("truetype");
