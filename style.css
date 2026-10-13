@@ -315,6 +315,8 @@ main {
    section#q {
       h2 {
          font-weight: 600;
+         margin-top: 15px;
+         font-size: 24px;
       }
       img {
          height: 422px;
@@ -439,11 +441,11 @@ main {
                   display: none;
                }
             }
-            .checkmark:active * {
+            .selected img {
                display: block;
             }
          }
-         img#checkmark {
+         #checkmark img {
             width: 50px;
          }
          hr {
