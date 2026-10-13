@@ -7,26 +7,37 @@
       <title>tropa</title>
    </head>
    <body>
-      <div class="hero">
+      <div class="hero dark-gradient">
          <header>
             <nav>
-               <span class="nav-item">О&nbsp;туре</span>
-               <span class="nav-item">Цены</span>
-               <span class="nav-item">Отзывы</span>
-               <span class="nav-item">Бронь</span>
+               <span class="nav-item">
+                  <a href="#about">О&nbsp;туре</a>
+               </span>
+               <span class="nav-item">
+                  <a href="#cost">Цены</a>
+               </span>
+               <span class="nav-item">
+                  <a href="#feedback">Отзывы</a>
+               </span>
+               <span class="nav-item">
+                  <a href="#booking">Бронь</a>
+               </span>
             </nav>
          </header>
          <div class="hero-text">
-            <h1>Амурский&nbsp;тур по&nbsp;горному лесу до&nbsp;озера</h1>
+            <h1>
+               Амурский&nbsp;тур<br />
+               по&nbsp;горному лесу до&nbsp;озера
+            </h1>
             <p>3&nbsp;дня в&nbsp;горах, средняя сложность, всё включено: трансфер, жильё, питание, гид и&nbsp;страховка.</p>
-            <div class="button">Забронировать дату</div>
+            <div class="button"><a href="#booking">Забронировать дату</a></div>
             <p id="center">Ближайшая группа: 12–14 июня, мест: 6</p>
          </div>
       </div>
 
       <main>
          <!-- о туре -->
-         <section>
+         <section id="about">
             <h1>коротко о&nbsp;туре</h1>
             <article class="grid cols4">
                <img src="imgs/about/1.png" alt="фото тура" />
@@ -45,13 +56,17 @@
                      <li>Старт: точка сбора в&nbsp;г. (уточняется при бронировании)</li>
                   </ul>
                </div>
-               <div class="button">Посмотреть&nbsp;маршрут</div>
-               <div class="button">посмотреть даты и&nbsp;цены</div>
+               <div class="button">
+                  <a href="#vaiting">Посмотреть&nbsp;маршрут</a>
+               </div>
+               <div class="button">
+                  <a href="#cost">посмотреть даты и&nbsp;цены</a>
+               </div>
             </article>
          </section>
 
          <!-- атмосфера тура -->
-         <section>
+         <section id="atmosphere">
             <h1>Атмосфера&nbsp;тура</h1>
             <article class="grid cols4">
                <img src="imgs/atmosphere/1.png" alt="фото тура" />
@@ -66,7 +81,7 @@
          </section>
 
          <!-- что вас ждет -->
-         <section>
+         <section id="vaiting">
             <h1>что вас ждет</h1>
             <article class="grid cols1">
                <img src="imgs/vait/1.png" alt="красивое озеро" />
@@ -85,7 +100,7 @@
          </section>
 
          <!-- программа тура -->
-         <section>
+         <section id="program">
             <h1>программа тура</h1>
             <article class="grid cols4">
                <div class="grid-item-with-list">
@@ -118,7 +133,9 @@
                      <li>Ориентировочное прибытие: вечер.</li>
                   </ol>
                </div>
-               <div class="button">забронировать место</div>
+               <div class="button">
+                  <a href="#booking">забронировать место</a>
+               </div>
                <img src="imgs/program/1.png" alt="фоточки с тура" />
                <img src="imgs/program/2.png" alt="фоточки с тура" />
                <img src="imgs/program/3.png" alt="фоточки с тура" />
@@ -127,45 +144,50 @@
          </section>
 
          <!-- даты и стоимость -->
-         <section>
+         <section id="cost">
             <h1>даты и стоимость</h1>
-            <p>
-               Мы&nbsp;формируем небольшие группы, чтобы маршрут оставался комфортным для всех участников. Выберите удобную дату
-               и&nbsp;забронируйте место.
-            </p>
             <article class="grid cols2">
-               <div class="img-with-text-wrapper">
+               <p>
+                  Мы&nbsp;формируем небольшие группы, чтобы маршрут оставался комфортным для всех участников. Выберите удобную дату
+                  и&nbsp;забронируйте место.
+               </p>
+               <div class="empty-div"></div>
+               <div class="img-with-text-wrapper dark-gradient" id="first-img">
                   <h3>Июнь</h3>
-                  <div>
-                     <div>
+                  <div class="flex">
+                     <div class="left-side">
                         <p>12-14 июня</p>
                         <p>Мест в группе: 6</p>
                         <p>Стоимость: 25 000 ₽ / человек</p>
                      </div>
-                     <div class="button">забронировать дату</div>
+                     <div class="button right-side">
+                        <a href="#booking">забронировать дату</a>
+                     </div>
                   </div>
                </div>
-               <div class="img-with-text-wrapper">
+               <div class="img-with-text-wrapper dark-gradient" id="second-img">
                   <h3>Август</h3>
-                  <div>
-                     <div>
+                  <div class="flex">
+                     <div class="left-side">
                         <p>7-9 августа</p>
                         <p>Мест в группе: 8</p>
                         <p>Стоимость: 27 000 ₽ / человек</p>
                      </div>
-                     <div class="button">забронировать дату</div>
+                     <div class="button right-side">
+                        <a href="#booking">забронировать дату</a>
+                     </div>
                   </div>
                </div>
             </article>
             <p>
-               Предоплата&nbsp;30% фиксирует ваше место в&nbsp;группе. Остаток оплачивается за&nbsp;14&nbsp;дней до&nbsp;старта. Возврат
-               предоплаты возможен за&nbsp;21&nbsp;день до&nbsp;даты тура, далее&nbsp;&mdash; перенос на&nbsp;другую дату или удержание
-               в&nbsp;счёт будущих туров.
+               Предоплата&nbsp;30% фиксирует ваше место в&nbsp;группе. Остаток оплачивается за&nbsp;14&nbsp;дней до&nbsp;старта. <br />
+               Возврат предоплаты возможен за&nbsp;21&nbsp;день до&nbsp;даты тура, далее&nbsp;&mdash; перенос на&nbsp;другую дату или
+               удержание в&nbsp;счёт будущих туров.
             </p>
          </section>
 
          <!-- что входит в стоимость -->
-         <section>
+         <section id="including">
             <h1>что входит в стоимость</h1>
             <article class="grid cols4">
                <div class="grid-item-with-list">
@@ -193,7 +215,7 @@
                <img src="imgs/including/2.png" alt="фотографии природы" />
                <img src="imgs/including/3.png" alt="фотографии природы" />
                <div class="grid-item-with-list">
-                  <h2>не входит</h2>
+                  <h2>Не входит</h2>
                   <ol>
                      <li>Проезд до&nbsp;точки сбора.</li>
                      <li>Личное снаряжение: рюкзак, спальник, коврик, одежда, обувь (если не&nbsp;указано иное).</li>
@@ -202,7 +224,7 @@
                </div>
                <img src="imgs/including/4.png" alt="фотографии природы" />
                <div class="grid-item-with-list">
-                  <h2>что не стоит брать</h2>
+                  <h2>Что не стоит брать</h2>
                   <ol>
                      <li>Чемоданы и&nbsp;большие сумки на&nbsp;колёсах.</li>
                      <li>Много косметики и&nbsp;парфюма</li>
@@ -215,10 +237,10 @@
          </section>
 
          <!-- безопасность и команда  -->
-         <section>
+         <section id="team">
             <h1>безопасность и команда</h1>
             <article class="grid cols2">
-               <div>
+               <div class="text">
                   <h3>Группу ведёт опытный гид, знакомый с&nbsp;маршрутом и&nbsp;особенностями местности.</h3>
                   <p>
                      Алексей, 8&nbsp;лет в&nbsp;горных походах. Сертифицированный инструктор по&nbsp;туризму. Ведёт группы
@@ -227,7 +249,7 @@
                </div>
                <img src="imgs/team/1.png" alt="гит на фоне гор" />
                <img src="imgs/team/2.png" alt="уступы у воды" />
-               <div>
+               <div class="text">
                   <h3>Безопасность на маршруте</h3>
                   <p>
                      Проверенная тропа с&nbsp;известными участками и&nbsp;местами для привалов. Спутниковая связь&nbsp;/ рации для
@@ -239,10 +261,10 @@
          </section>
 
          <!-- отзывы участников -->
-         <section>
+         <section id="feedback">
             <h1>отзывы участников</h1>
             <article class="grid cols4">
-               <div class="img-with-text-wrapper">
+               <div class="img-with-text-wrapper dark-gradient" id="img1">
                   <h3>Мария, 29 лет, Москва</h3>
                   <p>
                      Это был первый опыт в&nbsp;горах&nbsp;&mdash; и&nbsp;сразу удачный. Маршрут не&nbsp;слишком сложный, но&nbsp;очень
@@ -250,21 +272,21 @@
                      Озеро&nbsp;&mdash; просто космос.
                   </p>
                </div>
-               <div class="img-with-text-wrapper">
+               <div class="img-with-text-wrapper dark-gradient" id="img2">
                   <h3>Дмитрий, 34 года, Санкт‑Петербург</h3>
                   <p>
                      Хорошо организовано: трансфер, еда, лагерь&nbsp;&mdash; всё чётко. При этом нет ощущения &laquo;конвейера&raquo;.
                      Группа маленькая, успели познакомиться, вечера у&nbsp;костра&nbsp;&mdash; отдельный кайф.
                   </p>
                </div>
-               <div class="img-with-text-wrapper">
+               <div class="img-with-text-wrapper dark-gradient" id="img3">
                   <h3>Анна, 26 лет, Казань</h3>
                   <p>
                      Боялась, что не&nbsp;потяну физически, но&nbsp;всё оказалось реально. Много остановок, красивые виды, никто
                      не&nbsp;гнал. Теперь хочу на&nbsp;другие маршруты этой&nbsp;же команды.
                   </p>
                </div>
-               <div class="img-with-text-wrapper">
+               <div class="img-with-text-wrapper dark-gradient" id="img4">
                   <h3>Игорь, 31 год, Екатеринбург</h3>
                   <p>
                      Поехали с&nbsp;другом почти без опыта походов. Понравилось, что всё продумано: тропа понятная, привалы вовремя, лагерь
@@ -275,7 +297,8 @@
          </section>
 
          <!-- частые вопросы -->
-         <section>
+         <section id="q">
+            <h1>Частые вопросы</h1>
             <article class="grid cols2">
                <article class="grid cols1">
                   <h2>Какой уровень сложности у маршрута?</h2>
@@ -329,18 +352,18 @@
                   </p>
                </article>
                <article class="grid cols2">
-                  <img src="imgs/questions/1" alt="фото гор и воды" />
-                  <img src="imgs/questions/2" alt="фото гор и воды" />
-                  <img src="imgs/questions/3" alt="фото гор и воды" />
-                  <img src="imgs/questions/4" alt="фото гор и воды" />
-                  <img src="imgs/questions/5" alt="фото гор и воды" />
+                  <img src="imgs/questions/1.png" alt="фото гор и воды" />
+                  <img src="imgs/questions/2.png" alt="фото гор и воды" />
+                  <img class="span2" id="img" src="imgs/questions/3.png" alt="фото гор и воды" />
+                  <img src="imgs/questions/4.png" alt="фото гор и воды" />
+                  <img src="imgs/questions/5.png" alt="фото гор и воды" />
                </article>
             </article>
          </section>
 
          <!-- забронировать место в группе -->
-         <!-- о боже, что я тут надизайнила -->\
-         <section>
+         <!-- о боже, что я тут надизайнила -->
+         <section id="booking">
             <h1>забронировать место в группе</h1>
             <article class="grid cols2">
                <div class="form">
@@ -348,29 +371,41 @@
                      Оставьте заявку&nbsp;&mdash; мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение 24&nbsp;часов, подтвердим дату и&nbsp;отправим
                      реквизиты для предоплаты.
                   </p>
+
                   <article class="grid cols2">
                      <div class="left-part">
-                        <p></p>
-                        <input type="text" />
-                        <p></p>
-                        <input type="text" />
-                        <p></p>
-                        <input type="text" />
-                        <p></p>
-                        <input type="text" />
+                        <div class="param">
+                           <h2>Имя</h2>
+                           <input type="text" />
+                        </div>
+                        <div class="param">
+                           <h2>Телефон</h2>
+                           <input type="text" />
+                        </div>
+                        <div class="param">
+                           <h2>Email</h2>
+                           <input type="text" />
+                        </div>
+                        <div id="comment" class="param">
+                           <h2>Комментарий (опционально)</h2>
+                           <textarea></textarea>
+                        </div>
                      </div>
                      <div class="right-part">
-                        <p>Дата тура</p>
+                        <h2>Дата тура</h2>
                         <div class="double-calendars">
                            <div class="calendar-wrapper">
                               <div class="calendar-body">
                                  <div class="calendar-group span7">
+                                    <h2>Июнь 2026</h2>
+                                 </div>
+                                 <div class="calendar-group span7">
                                     <div class="calendar-item">ПН</div>
-                                    <div class="calendar-item">Вт</div>
-                                    <div class="calendar-item">Ср</div>
-                                    <div class="calendar-item">Чт</div>
-                                    <div class="calendar-item">пт</div>
-                                    <div class="calendar-item">сб</div>
+                                    <div class="calendar-item">ВТ</div>
+                                    <div class="calendar-item">СР</div>
+                                    <div class="calendar-item">ЧТ</div>
+                                    <div class="calendar-item">ПТ</div>
+                                    <div class="calendar-item">СБ</div>
                                     <div class="calendar-item">ВС</div>
                                  </div>
                                  <div class="calendar-item">1</div>
@@ -384,9 +419,11 @@
                                  <div class="calendar-item">9</div>
                                  <div class="calendar-item">10</div>
                                  <div class="calendar-item">11</div>
-                                 <div class="calendar-item">12</div>
-                                 <div class="calendar-item">13</div>
-                                 <div class="calendar-item">14</div>
+                                 <div class="calendar-group span3 selectable">
+                                    <div class="calendar-item">12</div>
+                                    <div class="calendar-item">13</div>
+                                    <div class="calendar-item">14</div>
+                                 </div>
                                  <div class="calendar-item">15</div>
                                  <div class="calendar-item">16</div>
                                  <div class="calendar-item">17</div>
@@ -411,69 +448,80 @@
                               </div>
                            </div>
 
+                           <hr />
+
                            <div class="calendar-wrapper">
                               <div class="calendar-body">
                                  <div class="calendar-group span7">
+                                    <h2>Август 2026</h2>
+                                 </div>
+                                 <div class="calendar-group span7">
                                     <div class="calendar-item">ПН</div>
-                                    <div class="calendar-item">Вт</div>
-                                    <div class="calendar-item">Ср</div>
-                                    <div class="calendar-item">Чт</div>
-                                    <div class="calendar-item">пт</div>
-                                    <div class="calendar-item">сб</div>
+                                    <div class="calendar-item">ВТ</div>
+                                    <div class="calendar-item">СР</div>
+                                    <div class="calendar-item">ЧТ</div>
+                                    <div class="calendar-item">ПТ</div>
+                                    <div class="calendar-item">СБ</div>
                                     <div class="calendar-item">ВС</div>
                                  </div>
+                                 <div class="calendar-item empty"></div>
+                                 <div class="calendar-item empty"></div>
+                                 <div class="calendar-item">1</div>
+                                 <div class="calendar-item">2</div>
+                                 <div class="calendar-item">3</div>
+                                 <div class="calendar-item">4</div>
+                                 <div class="calendar-item">5</div>
+                                 <div class="calendar-item">6</div>
+                                 <div class="calendar-group span3 selectable">
+                                    <div class="calendar-item">7</div>
+                                    <div class="calendar-item">8</div>
+                                    <div class="calendar-item">9</div>
+                                 </div>
+                                 <div class="calendar-item">10</div>
+                                 <div class="calendar-item">11</div>
+                                 <div class="calendar-item">12</div>
+                                 <div class="calendar-item">13</div>
+                                 <div class="calendar-item">14</div>
+                                 <div class="calendar-item">15</div>
+                                 <div class="calendar-item">16</div>
+                                 <div class="calendar-item">17</div>
+                                 <div class="calendar-item">18</div>
+                                 <div class="calendar-item">19</div>
+                                 <div class="calendar-item">20</div>
+                                 <div class="calendar-item">21</div>
+                                 <div class="calendar-item">22</div>
+                                 <div class="calendar-item">23</div>
+                                 <div class="calendar-item">24</div>
+                                 <div class="calendar-item">25</div>
+                                 <div class="calendar-item">26</div>
+                                 <div class="calendar-item">27</div>
+                                 <div class="calendar-item">28</div>
+                                 <div class="calendar-item">29</div>
+                                 <div class="calendar-item">30</div>
+                                 <div class="calendar-item">31</div>
+                                 <div class="calendar-item empty"></div>
+                                 <div class="calendar-item empty"></div>
                               </div>
-                              <div class="calendar-item empty"></div>
-                              <div class="calendar-item empty"></div>
-                              <div class="calendar-item">1</div>
-                              <div class="calendar-item">2</div>
-                              <div class="calendar-item">3</div>
-                              <div class="calendar-item">4</div>
-                              <div class="calendar-item">5</div>
-                              <div class="calendar-item">6</div>
-                              <div class="calendar-item">7</div>
-                              <div class="calendar-item">8</div>
-                              <div class="calendar-item">9</div>
-                              <div class="calendar-item">10</div>
-                              <div class="calendar-item">11</div>
-                              <div class="calendar-item">12</div>
-                              <div class="calendar-item">13</div>
-                              <div class="calendar-item">14</div>
-                              <div class="calendar-item">15</div>
-                              <div class="calendar-item">16</div>
-                              <div class="calendar-item">17</div>
-                              <div class="calendar-item">18</div>
-                              <div class="calendar-item">19</div>
-                              <div class="calendar-item">20</div>
-                              <div class="calendar-item">21</div>
-                              <div class="calendar-item">22</div>
-                              <div class="calendar-item">23</div>
-                              <div class="calendar-item">24</div>
-                              <div class="calendar-item">25</div>
-                              <div class="calendar-item">26</div>
-                              <div class="calendar-item">27</div>
-                              <div class="calendar-item">28</div>
-                              <div class="calendar-item">29</div>
-                              <div class="calendar-item">30</div>
-                              <div class="calendar-item">31</div>
-                              <div class="calendar-item empty"></div>
-                              <div class="calendar-item empty"></div>
                            </div>
-
-                           <p>Количество участников</p>
-                           <input type="text" />
                         </div>
+                        <h2>Количество участников</h2>
+                        <input type="text" />
                      </div>
                   </article>
 
                   <div class="agree">
-                     <h2></h2>
+                     <h2>
+                        Я согласен(на) с правилами тура <br />
+                        и политикой обработки персональных данных
+                     </h2>
                      <div class="checkmark">
-                        <img src="imgs/checkmark.png" alt="" />
+                        <img id="checkmark" src="imgs/checkmark.png" alt="" />
                      </div>
                   </div>
 
-                  <div class="button">забронировать</div>
+                  <div class="button">
+                     <a href="#booking">забронировать</a>
+                  </div>
                </div>
                <img src="imgs/booking/1.png" alt="фото лесного озера за деревьями" />
             </article>
@@ -482,13 +530,13 @@
 
       <footer>
          <article class="grid cols2">
-            <div>
+            <div class="col">
                <p>Телефон: +7 () ‑‑</p>
                <p>Мессенджеры: Telegram / WhatsApp</p>
                <p>Email: hello@.ru</p>
                <p>Соцсети: VK / Instagram / Telegram‑канал</p>
             </div>
-            <div>
+            <div class="col">
                <p>Оферта</p>
                <p>Политика обработки персональных данных</p>
                <p>Правила участия в туре</p>
