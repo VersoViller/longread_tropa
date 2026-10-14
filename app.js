@@ -9,3 +9,10 @@ checkBox.addEventListener("click", (e) => {
       checkBox.classList.remove("selected");
    }
 });
+
+const selectableGroup = document.querySelectorAll(".selectable");
+selectableGroup.forEach(function (item, i, arr) {
+   item.addEventListener("click", (event) => {
+      item.classList.toggle("select");
+   });
+});
